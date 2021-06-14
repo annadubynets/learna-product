@@ -1,0 +1,70 @@
+$blue-color: #153A59;
+$royal-blue-color: #2464B0;
+$light-blue-color: #B5CBEA;
+$pink-color: #F0508A;
+$medium-violet-color: #B93E73;
+$light-slate-gray-color: #D7DCE1;
+$white-smoke-color: #F5F5F5;
+$alice-blue-color: #F7F9FA;
+$ghost-white-color: #F8F9FA;
+$floral-white-color: #F6F8F9;
+$white-color: #FFFFFF;
+.pb-35px {
+    padding-bottom: 35px;
+}
+
+.py-54px {
+    padding: 54px 0;
+}
+
+.bg-light {
+    background-color: $ghost-white-color!important;
+}
+
+.bg-white {
+    background-color: $white-color!important;
+}
+
+.bg-primary {
+    background-color: $blue-color!important;
+}
+
+.bg-blue {
+    background-color: $alice-blue-color;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+}
+
+.font-weight-700 {
+    font-weight: bold;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.text-white {
+    color: $white-color!important;
+}
+
+.text-primary {
+    color: $blue-color!important;
+}
+
+.text-pink {
+    color: $pink-color!important;
+}
