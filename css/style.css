@@ -579,7 +579,7 @@ p span {
 }
 
 .carousel-control-prev-icon {
-  background-image: url("../images/left-arrow.svg");
+  display: none;
 }
 
 .carousel-control-prev {
@@ -587,11 +587,15 @@ p span {
 }
 
 .carousel-control-next-icon {
-  background-image: url("../images/right-arrow.svg");
+  display: none;
 }
 
 .carousel-control-next {
   right: -70px;
+}
+
+.carousel-indicators li {
+  background-color: #153A59;
 }
 
 .table {

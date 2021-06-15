@@ -542,7 +542,7 @@ p {
 }
 
 .carousel-control-prev-icon {
-    background-image: url('../images/left-arrow.svg');
+    display: none;
 }
 
 .carousel-control-prev {
@@ -550,11 +550,15 @@ p {
 }
 
 .carousel-control-next-icon {
-    background-image: url('../images/right-arrow.svg');
+    display: none;
 }
 
 .carousel-control-next {
     right: -70px;
+}
+
+.carousel-indicators li {
+    background-color: $blue-color;
 }
 
 .table {
