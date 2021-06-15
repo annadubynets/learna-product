@@ -431,28 +431,28 @@ p span {
   padding: 9px 0;
 }
 
-.nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active {
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
   background-color: #F6F8F9;
   border: none;
   padding: 15px 0;
 }
 
-.nav-tabs {
+.nav-pills {
   border-bottom: none;
 }
-.nav-tabs .nav-link {
+.nav-pills .nav-link {
   border-radius: 0;
   background-color: #BEC6CF;
   padding: 15px 0;
 }
-.nav-tabs .nav-item {
+.nav-pills .nav-item {
   padding: 0;
 }
-.nav-tabs .nav-item:hover:after {
+.nav-pills .nav-item:hover:after {
   display: none;
 }
-.nav-tabs .nav-item:hover .nav-link {
+.nav-pills .nav-item:hover .nav-link {
   color: #153A59 !important;
   text-decoration: underline;
 }
