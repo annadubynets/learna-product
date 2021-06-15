@@ -217,10 +217,15 @@ p {
 .nav-item {
     position: relative;
     transition: all 200ms linear;
+    padding: 18px 30px;
 }
 
 .navbar-brand {
     margin-right: 102px;
+}
+
+.navbar li:not(:first-child) {
+    border-left: 1px solid #D6D6D7;
 }
 
 .dropdown-item {
@@ -291,7 +296,7 @@ p {
     width: auto!important;
     font-weight: normal;
     font-size: 16px;
-    padding: 18px 112px 18px 18px;
+    padding: 18px 170px 18px 18px;
     background-color: #FFFFFF;
     color: $blue-color;
     border: none;
@@ -488,6 +493,7 @@ p {
                     font-weight: normal;
                     font-size: 20px;
                     color: $blue-color!important;
+                    text-align: left;
                     &:hover {
                         text-decoration: none;
                     }
@@ -526,6 +532,7 @@ p {
                     font-weight: normal;
                     font-size: 20px;
                     color: $white-color!important;
+                    text-align: left;
                     &:hover {
                         text-decoration: none;
                     }
