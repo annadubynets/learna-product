@@ -578,6 +578,22 @@ p span {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
+.carousel-control-prev-icon {
+  background-image: url("../images/left-arrow.svg");
+}
+
+.carousel-control-prev {
+  left: -70px;
+}
+
+.carousel-control-next-icon {
+  background-image: url("../images/right-arrow.svg");
+}
+
+.carousel-control-next {
+  right: -70px;
+}
+
 .table {
   font-weight: normal;
   font-size: 14px;
