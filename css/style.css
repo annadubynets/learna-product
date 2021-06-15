@@ -424,6 +424,7 @@ p span {
   background-color: #F6F8F9;
   border: none;
   padding: 15px 0;
+  text-decoration: underline;
 }
 
 .nav-pills {
