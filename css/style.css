@@ -446,6 +446,9 @@ p span {
   background-color: #BEC6CF;
   padding: 15px 0;
 }
+.nav-tabs .nav-item {
+  padding: 0;
+}
 .nav-tabs .nav-item:hover:after {
   display: none;
 }
