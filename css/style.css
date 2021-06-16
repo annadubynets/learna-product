@@ -379,42 +379,6 @@ p span {
   color: black;
 }
 
-.card {
-  border: none;
-  border-radius: 5px;
-}
-.card .card-body {
-  border: 1px solid #E0E6EA;
-  background-color: #F6F8F9;
-}
-.card .card-body p {
-  font-size: 14px;
-}
-.card .apply-block {
-  background-color: #F0508A;
-  border: none;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-.card .apply-block .apply-btn {
-  font-family: "Patua One", sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  color: #FFFFFF;
-  padding: 20px 0;
-}
-.card .apply-block .apply-btn:hover, .card .apply-block .apply-btn:focus {
-  transition: all 0.1s;
-  box-shadow: 0 10px 10px #00000022;
-  color: #FFFFFF;
-}
-.card .price-block {
-  background-color: #B5CBEA;
-  border: none;
-  padding: 13px 16px;
-  text-align: center;
-}
-
 .border-top {
   padding: 9px 0;
 }
@@ -480,6 +444,48 @@ p span {
   justify-content: center;
   align-items: center;
   padding: 0 9px;
+}
+.hero .card {
+  border: none;
+  border-radius: 5px;
+  position: fixed;
+  min-width: 460px;
+}
+.hero .card .card-body {
+  border: 1px solid #E0E6EA;
+  background-color: #F6F8F9;
+}
+.hero .card .card-body p {
+  font-size: 14px;
+}
+.hero .card .card-footer {
+  background-color: #FFFFFF !important;
+  padding: 0;
+  border-top: none;
+}
+.hero .card .apply-block {
+  background-color: #F0508A;
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.hero .card .apply-block .apply-btn {
+  font-family: "Patua One", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: #FFFFFF;
+  padding: 20px 0;
+}
+.hero .card .apply-block .apply-btn:hover, .hero .card .apply-block .apply-btn:focus {
+  transition: all 0.1s;
+  box-shadow: 0 10px 10px #00000022;
+  color: #FFFFFF;
+}
+.hero .card .price-block {
+  background-color: #B5CBEA;
+  border: none;
+  padding: 13px 16px;
+  text-align: center;
 }
 
 /* Type studies section
