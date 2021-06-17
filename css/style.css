@@ -338,7 +338,7 @@ p span {
   min-width: 376px;
   font-weight: normal;
   font-size: 16px;
-  padding: 18px 140px 18px 18px;
+  padding: 18px 60px 18px 18px;
   background-color: #FFFFFF;
   color: #153A59;
   border: none;
@@ -450,6 +450,7 @@ p span {
   border-radius: 5px;
   position: fixed;
   min-width: 460px;
+  background: transparent;
 }
 .hero .card .card-body {
   border: 1px solid #E0E6EA;
@@ -457,11 +458,6 @@ p span {
 }
 .hero .card .card-body p {
   font-size: 14px;
-}
-.hero .card .card-footer {
-  background-color: #FFFFFF !important;
-  padding: 0;
-  border-top: none;
 }
 .hero .card .apply-block {
   background-color: #F0508A;
