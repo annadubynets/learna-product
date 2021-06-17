@@ -45,8 +45,8 @@
 
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?vopuhb');
-    src: url('../fonts/icomoon.eot?vopuhb#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?vopuhb') format('truetype'), url('../fonts/icomoon.woff?vopuhb') format('woff'), url('../fonts/icomoon.svg?vopuhb#icomoon') format('svg');
+    src: url('../fonts/icomoon.eot?5bhxoh');
+    src: url('../fonts/icomoon.eot?5bhxoh#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?5bhxoh') format('truetype'), url('../fonts/icomoon.woff?5bhxoh') format('woff'), url('../fonts/icomoon.svg?5bhxoh#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -70,6 +70,14 @@
 .icon-search:before {
     content: "\e902";
     color: #153a59;
+}
+
+.icon-minus-solid:before {
+    content: "\e907";
+}
+
+.icon-plus-solid:before {
+    content: "\e908";
 }
 
 .icon-desktop-solid:before {

@@ -492,6 +492,14 @@ p {
                         text-decoration: none;
                     }
                 }
+                .collapse-btn-arrow[aria-expanded="true"]::after {
+                    content: "\e907";
+                    font-family: 'icomoon' !important;
+                }
+                .collapse-btn-arrow[aria-expanded="false"]::after {
+                    content: "\e908";
+                    font-family: 'icomoon' !important;
+                }
             }
             .card-body {
                 font-weight: normal;
@@ -530,6 +538,14 @@ p {
                     &:hover {
                         text-decoration: none;
                     }
+                }
+                .collapse-btn-arrow[aria-expanded="true"]::after {
+                    content: "\e907";
+                    font-family: 'icomoon' !important;
+                }
+                .collapse-btn-arrow[aria-expanded="false"]::after {
+                    content: "\e908";
+                    font-family: 'icomoon' !important;
                 }
             }
             .card-body {

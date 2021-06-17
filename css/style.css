@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "bootstrap.min.css";
 @import "fonts.css";
 .pb-35px {
@@ -537,6 +538,14 @@ p span {
 .curriculum .curriculum-accordion .card .card-header .btn-link:hover {
   text-decoration: none;
 }
+.curriculum .curriculum-accordion .card .card-header .collapse-btn-arrow[aria-expanded=true]::after {
+  content: "";
+  font-family: "icomoon" !important;
+}
+.curriculum .curriculum-accordion .card .card-header .collapse-btn-arrow[aria-expanded=false]::after {
+  content: "";
+  font-family: "icomoon" !important;
+}
 .curriculum .curriculum-accordion .card .card-body {
   font-weight: normal;
   font-size: 14px;
@@ -571,6 +580,14 @@ p span {
 }
 .assessment-methods .assessment-methods-accordion .card .card-header .btn-link:hover {
   text-decoration: none;
+}
+.assessment-methods .assessment-methods-accordion .card .card-header .collapse-btn-arrow[aria-expanded=true]::after {
+  content: "";
+  font-family: "icomoon" !important;
+}
+.assessment-methods .assessment-methods-accordion .card .card-header .collapse-btn-arrow[aria-expanded=false]::after {
+  content: "";
+  font-family: "icomoon" !important;
 }
 .assessment-methods .assessment-methods-accordion .card .card-body {
   font-weight: normal;
