@@ -212,6 +212,12 @@ p {
     margin-right: 102px;
 }
 
+@media (max-width: 767px) {
+    .navbar-brand {
+        margin-right: 0px;
+    }
+}
+
 .navbar li:not(:first-child) {
     border-left: 1px solid #D6D6D7;
 }
@@ -429,6 +435,12 @@ p {
             border: none;
             padding: 13px 16px;
             text-align: center;
+        }
+    }
+    @media (max-width: 767px) {
+        .card {
+            position: relative;
+            min-width: auto;
         }
     }
 }
