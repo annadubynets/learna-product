@@ -265,13 +265,18 @@ p span {
   padding: 18px 30px;
 }
 
+@media (min-width: 992px) {
+  .nav-item {
+    padding: 18px 20px;
+  }
+}
 .navbar-brand {
   margin-right: 102px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .navbar-brand {
-    margin-right: 0px;
+    margin-right: 10px;
   }
 }
 .navbar li:not(:first-child) {
@@ -407,6 +412,7 @@ p span {
 }
 .nav-pills .nav-item {
   padding: 0;
+  width: 50%;
 }
 .nav-pills .nav-item:hover:after {
   display: none;
@@ -455,7 +461,6 @@ p span {
   border: none;
   border-radius: 5px;
   position: fixed;
-  min-width: 460px;
   background: transparent;
 }
 .hero .card .card-body {
@@ -489,7 +494,7 @@ p span {
   padding: 13px 16px;
   text-align: center;
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .hero .card {
     position: relative;
     min-width: auto;
@@ -521,47 +526,32 @@ p span {
 
 /* Curriculum section
 ==================================================*/
-.curriculum .curriculum-accordion .card {
+.curriculum .card {
   border: none !important;
   padding-bottom: 4px;
 }
-.curriculum .curriculum-accordion .card .card-header {
+.curriculum .card .card-header {
   background-color: #D7DCE1 !important;
   border-bottom: none;
   padding: 14px 16px;
 }
-.curriculum .curriculum-accordion .card .card-header:first-child {
+.curriculum .card .card-header:first-child {
   border-radius: 0 !important;
 }
-.curriculum .curriculum-accordion .card .card-header .btn {
-  padding: 0;
-}
-.curriculum .curriculum-accordion .card .card-header .btn:focus {
-  box-shadow: none;
-}
-.curriculum .curriculum-accordion .card .card-header .btn-link {
+.curriculum .card .card-header h5 {
   font-family: "Patua One", sans-serif;
   font-weight: normal;
   font-size: 20px;
   color: #153A59 !important;
   text-align: left;
 }
-.curriculum .curriculum-accordion .card .card-header .btn-link:hover {
+.curriculum .card .card-header h5:hover {
   text-decoration: none;
 }
-.curriculum .curriculum-accordion .card .card-header .collapse-btn-arrow[aria-expanded=true]::after {
-  content: "";
-  font-family: "icomoon" !important;
-}
-.curriculum .curriculum-accordion .card .card-header .collapse-btn-arrow[aria-expanded=false]::after {
-  content: "";
-  font-family: "icomoon" !important;
-}
-.curriculum .curriculum-accordion .card .card-body {
+.curriculum .card .card-body {
   font-weight: normal;
   font-size: 14px;
   color: #153A59;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 .assessment-methods .assessment-methods-accordion .card {
@@ -589,7 +579,7 @@ p span {
   color: #FFFFFF !important;
   text-align: left;
 }
-.assessment-methods .assessment-methods-accordion .card .card-header .btn-link:hover {
+.assessment-methods .assessment-methods-accordion .card .card-header .btn-link:hover, .assessment-methods .assessment-methods-accordion .card .card-header .btn-link:focus, .assessment-methods .assessment-methods-accordion .card .card-header .btn-link:active {
   text-decoration: none;
 }
 .assessment-methods .assessment-methods-accordion .card .card-header .collapse-btn-arrow[aria-expanded=true]::after {

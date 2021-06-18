@@ -208,13 +208,19 @@ p {
     padding: 18px 30px;
 }
 
+@media (min-width: 992px) {
+    .nav-item {
+        padding: 18px 20px;
+    }
+}
+
 .navbar-brand {
     margin-right: 102px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
     .navbar-brand {
-        margin-right: 0px;
+        margin-right: 10px;
     }
 }
 
@@ -352,6 +358,7 @@ p {
     }
     .nav-item {
         padding: 0;
+        width: 50%;
     }
     .nav-item:hover:after {
         display: none;
@@ -402,7 +409,6 @@ p {
         border: none;
         border-radius: 5px;
         position: fixed;
-        min-width: 460px;
         background: transparent;
         .card-body {
             border: 1px solid #E0E6EA;
@@ -437,7 +443,7 @@ p {
             text-align: center;
         }
     }
-    @media (max-width: 767px) {
+    @media (max-width: 992px) {
         .card {
             position: relative;
             min-width: auto;
@@ -477,48 +483,31 @@ p {
 ==================================================*/
 
 .curriculum {
-    .curriculum-accordion {
-        .card {
-            border: none!important;
-            padding-bottom: 4px;
-            .card-header {
-                background-color: $light-slate-gray-color!important;
-                border-bottom: none;
-                padding: 14px 16px;
-                &:first-child {
-                    border-radius: 0!important;
-                }
-                .btn {
-                    padding: 0;
-                    &:focus {
-                        box-shadow: none;
-                    }
-                }
-                .btn-link {
-                    font-family: "Patua One", sans-serif;
-                    font-weight: normal;
-                    font-size: 20px;
-                    color: $blue-color!important;
-                    text-align: left;
-                    &:hover {
-                        text-decoration: none;
-                    }
-                }
-                .collapse-btn-arrow[aria-expanded="true"]::after {
-                    content: "\e907";
-                    font-family: 'icomoon' !important;
-                }
-                .collapse-btn-arrow[aria-expanded="false"]::after {
-                    content: "\e908";
-                    font-family: 'icomoon' !important;
-                }
+    .card {
+        border: none!important;
+        padding-bottom: 4px;
+        .card-header {
+            background-color: $light-slate-gray-color!important;
+            border-bottom: none;
+            padding: 14px 16px;
+            &:first-child {
+                border-radius: 0!important;
             }
-            .card-body {
+            h5 {
+                font-family: "Patua One", sans-serif;
                 font-weight: normal;
-                font-size: 14px;
-                color: $blue-color;
-                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+                font-size: 20px;
+                color: $blue-color!important;
+                text-align: left;
+                &:hover {
+                    text-decoration: none;
+                }
             }
+        }
+        .card-body {
+            font-weight: normal;
+            font-size: 14px;
+            color: $blue-color;
         }
     }
 }
@@ -547,7 +536,9 @@ p {
                     font-size: 20px;
                     color: $white-color!important;
                     text-align: left;
-                    &:hover {
+                    &:hover,
+                    &:focus,
+                    &:active {
                         text-decoration: none;
                     }
                 }
