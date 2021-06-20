@@ -424,29 +424,36 @@ p {
         align-items: center;
         padding: 0 9px;
     }
-    .card {
-        border: none;
-        border-radius: 5px;
-        position: fixed;
-        background: transparent;
-        .card-body {
-            border: 1px solid #E0E6EA;
-            background-color: $floral-white-color;
-            p {
-                font-size: 14px;
+    .desktop-pult {
+        position: absolute;
+        right: 0px;
+        left: 0px;
+        .card {
+            border: none;
+            border-radius: 5px;
+            position: sticky;
+            top: 6rem;
+            align-self: flex-start;
+            background: transparent;
+            .card-body {
+                border: 1px solid #E0E6EA;
+                background-color: $floral-white-color;
+                p {
+                    font-size: 14px;
+                }
+            }
+            .price-block {
+                background-color: $light-blue-color;
+                border: none;
+                padding: 13px 16px;
+                text-align: center;
             }
         }
-        .price-block {
-            background-color: $light-blue-color;
-            border: none;
-            padding: 13px 16px;
-            text-align: center;
-        }
-    }
-    @media (max-width: 992px) {
-        .card {
-            position: relative;
-            min-width: auto;
+        @media (max-width: 992px) {
+            .card {
+                position: relative;
+                min-width: auto;
+            }
         }
     }
 }
