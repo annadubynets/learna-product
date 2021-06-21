@@ -378,6 +378,11 @@ p span {
   transition: all 0.4s;
 }
 
+@media (max-width: 1200px) {
+  .search-input {
+    min-width: 0;
+  }
+}
 .search-input:focus {
   outline: none;
   box-shadow: 0 1px 12px #b8c6db;
