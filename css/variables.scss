@@ -22,6 +22,17 @@ $white-color: #FFFFFF;
 }
 
 .bg-light {
+    background: linear-gradient(90deg, rgba(248, 249, 250, 1) 50%, rgba(255, 255, 255, 1) 100%);
+}
+
+@media (max-width: 768px) {
+    .bg-light {
+        background: none;
+        background-color: $ghost-white-color!important;
+    }
+}
+
+.bg-body {
     background-color: $ghost-white-color!important;
 }
 
@@ -38,27 +49,27 @@ $white-color: #FFFFFF;
 }
 
 .font-weight-500 {
-    font-weight: 500;
+    font-weight: 500!important;
 }
 
 .font-weight-700 {
-    font-weight: bold;
+    font-weight: bold!important;
 }
 
 .font-size-14 {
-    font-size: 14px;
+    font-size: 14px!important;
 }
 
 .font-size-16 {
-    font-size: 16px;
+    font-size: 16px!important;
 }
 
 .font-size-18 {
-    font-size: 18px;
+    font-size: 18px!important;
 }
 
 .font-size-20 {
-    font-size: 20px;
+    font-size: 20px!important;
 }
 
 .text-white {

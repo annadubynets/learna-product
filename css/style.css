@@ -14,6 +14,16 @@
 }
 
 .bg-light {
+  background: linear-gradient(90deg, #f8f9fa 50%, white 100%);
+}
+
+@media (max-width: 768px) {
+  .bg-light {
+    background: none;
+    background-color: #F8F9FA !important;
+  }
+}
+.bg-body {
   background-color: #F8F9FA !important;
 }
 
@@ -30,27 +40,27 @@
 }
 
 .font-weight-500 {
-  font-weight: 500;
+  font-weight: 500 !important;
 }
 
 .font-weight-700 {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .font-size-14 {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 
 .font-size-16 {
-  font-size: 16px;
+  font-size: 16px !important;
 }
 
 .font-size-18 {
-  font-size: 18px;
+  font-size: 18px !important;
 }
 
 .font-size-20 {
-  font-size: 20px;
+  font-size: 20px !important;
 }
 
 .text-white {
@@ -92,7 +102,7 @@ h3 {
 h3 span {
   font-weight: bold;
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(21, 58, 89, 0.6);
 }
 
 h4 {
@@ -109,6 +119,22 @@ p {
 }
 p span {
   color: #0A8FFF;
+}
+
+ul {
+  padding-left: 22px;
+  margin-bottom: 0px;
+}
+ul li {
+  font-weight: 500;
+  font-size: 14px;
+  color: #153A59;
+  padding-left: 32px;
+}
+
+ul li::marker {
+  color: #153A59;
+  font-size: 24px;
 }
 
 .striped-border {
@@ -346,17 +372,6 @@ p span {
   color: #153A59;
 }
 
-.list-style {
-  padding-left: 20px;
-  margin-bottom: 0px;
-}
-.list-style .list-item {
-  font-weight: 500;
-  font-size: 14px;
-  color: #153A59;
-  padding-left: 32px;
-}
-
 .search-box {
   width: auto;
   position: relative;
@@ -407,12 +422,12 @@ p span {
 .search-btn:hover {
   transform: scale(1.2);
   cursor: pointer;
-  color: black;
+  color: #153A59;
 }
 
 .search-btn:focus {
   outline: none;
-  color: black;
+  color: #153A59;
 }
 
 .border-top {
@@ -421,6 +436,7 @@ p span {
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
+  font-weight: 700;
   background-color: #F6F8F9;
   border: none;
   padding: 15px 0;
@@ -431,6 +447,7 @@ p span {
   border-bottom: none;
 }
 .nav-pills .nav-link {
+  font-weight: 500;
   border-radius: 0;
   background-color: #BEC6CF;
   padding: 15px 0;
@@ -503,8 +520,9 @@ p span {
   font-size: 14px;
 }
 .hero .desktop-pult .card .price-block {
-  background-color: #B5CBEA;
-  border: none;
+  background-color: rgba(181, 203, 234, 0.2);
+  border: 1px solid #E0E6EA;
+  border-top: none;
   padding: 13px 16px;
   text-align: center;
 }
@@ -513,6 +531,25 @@ p span {
     position: relative;
     min-width: auto;
   }
+}
+.hero .mobile-pult.card {
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+}
+.hero .mobile-pult.card .card-body {
+  border: 1px solid #E0E6EA;
+  background-color: #F6F8F9;
+}
+.hero .mobile-pult.card .card-body p {
+  font-size: 14px;
+}
+.hero .mobile-pult.card .price-block {
+  background-color: rgba(181, 203, 234, 0.2);
+  border: 1px solid #E0E6EA;
+  border-top: none;
+  padding: 13px 16px;
+  text-align: center;
 }
 
 .apply-block {
@@ -532,6 +569,7 @@ p span {
   transition: all 0.1s;
   box-shadow: 0 10px 10px #00000022;
   color: #FFFFFF;
+  background: #B93E73;
 }
 
 @media (max-width: 992px) {
@@ -576,6 +614,16 @@ p span {
   width: 80px;
 }
 
+@media (max-width: 992px) {
+  .circle-img {
+    width: 110px !important;
+    height: 110px !important;
+  }
+
+  .type-img-style {
+    width: 50px !important;
+  }
+}
 /* Curriculum section
 ==================================================*/
 .curriculum .card {
@@ -635,18 +683,19 @@ p span {
   text-decoration: none;
 }
 .assessment-methods .assessment-methods-accordion .card .card-header .collapse-btn-arrow[aria-expanded=true]::after {
-  content: "";
+  content: "";
+  color: #fff;
   font-family: "icomoon" !important;
 }
 .assessment-methods .assessment-methods-accordion .card .card-header .collapse-btn-arrow[aria-expanded=false]::after {
-  content: "";
+  content: "";
+  color: #fff;
   font-family: "icomoon" !important;
 }
 .assessment-methods .assessment-methods-accordion .card .card-body {
   font-weight: normal;
   font-size: 14px;
   color: #153A59;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
 .carousel-indicators li {
@@ -657,6 +706,7 @@ p span {
   font-weight: normal;
   font-size: 14px;
   color: #153A59;
+  background: #FFFFFF;
 }
 
 .table-secondary,
@@ -677,13 +727,13 @@ p span {
   font-size: 18px;
 }
 
-footer .list-style {
+footer ul {
   padding-left: 0;
 }
-footer .list-style .list-item {
+footer ul li {
   padding-left: 0;
 }
-footer .list-style .list-item a {
+footer ul li a {
   font-size: 16px;
   color: #FFFFFF !important;
 }
@@ -701,6 +751,67 @@ footer .list-style .list-item a {
   background-color: #FFFFFF;
   border: 1px solid #D2D2D2;
   border-radius: 0;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../images/arrows-01.svg");
+  bottom: 0;
+  left: 236px;
+}
+
+.carousel-control-next-icon {
+  background-image: url("../images/arrows-02.svg");
+  bottom: 0;
+  right: 324px;
+}
+
+.num {
+  font-weight: normal;
+  font-size: 14px;
+  color: #153A59;
+  text-align: center;
+  bottom: 0;
+  right: 370px;
+}
+
+@media (max-width: 576px) {
+  .carousel-control-prev-icon {
+    left: 108px;
+  }
+
+  .carousel-control-next-icon {
+    right: 100px;
+  }
+
+  .num {
+    right: 130px;
+  }
+}
+@media (max-width: 992px) {
+  .carousel-control-prev-icon {
+    left: 224px;
+  }
+
+  .carousel-control-next-icon {
+    right: 288px;
+  }
+
+  .num {
+    right: 60px;
+  }
+}
+@media (max-width: 1200px) {
+  .carousel-control-prev-icon {
+    left: 200px;
+  }
+
+  .carousel-control-next-icon {
+    right: 200px;
+  }
+
+  .num {
+    left: 270px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -24,3 +24,40 @@ $(function() {
         setupPult();
     }, 1000)
 });
+
+var totalItems = $('.item').length;
+var currentIndex = $('div.active').index() + 1;
+$('.num').html('Faculty' + '' + currentIndex + 'of' + totalItems + '');
+
+$('#carouselPartnersControls').carousel({
+    interval: 2000
+});
+
+$('#carouselPartnersControls').bind('slid', function() {
+    currentIndex = $('div.active').index() + 1;
+    $('.num').html('Faculty' + '' + currentIndex + 'of' + totalItems + '');
+});
+
+
+$('.num').html('Faculty' + '' + currentIndex + 'of' + totalItems + '');
+
+$('#carouselLeadControls').carousel({
+    interval: 2000
+});
+
+$('#carouselLeadControls').bind('slid', function() {
+    currentIndex = $('div.active').index() + 1;
+    $('.num').html('Faculty' + '' + currentIndex + 'of' + totalItems + '');
+});
+
+
+$('.num').html('Faculty' + '' + currentIndex + 'of' + totalItems + '');
+
+$('#carouselBapioControls').carousel({
+    interval: 2000
+});
+
+$('#carouselBapioControls').bind('slid', function() {
+    currentIndex = $('div.active').index() + 1;
+    $('.num').html('Faculty' + '' + currentIndex + 'of' + totalItems + '');
+});
