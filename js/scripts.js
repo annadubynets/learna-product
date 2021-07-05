@@ -8,7 +8,6 @@ $(function() {
         var pult = $('.desktop-pult');
         if (pult.is(":visible")) {
             var whyLernaTop = $('.pult-bottom-barrier').offset().top;
-            console.log(whyLernaTop)
             $('.desktop-pult').height(whyLernaTop - 150);
 
             var heroRowPosition = $('.pult-top-barrier').offset().top + 24;
@@ -25,39 +24,29 @@ $(function() {
     }, 1000)
 });
 
-var totalItems = $('.item').length;
-var currentIndex = $('div.active').index() + 1;
-$('.num').html('Faculty' + '' + currentIndex + 'of' + totalItems + '');
+function setupCarousel(selector) {
+    let carouselElement = $(selector);
 
-$('#carouselPartnersControls').carousel({
-    interval: 2000
-});
+    // init carousel control
+    carouselElement.carousel({
+        interval: 2000
+    });
 
-$('#carouselPartnersControls').bind('slid', function() {
-    currentIndex = $('div.active').index() + 1;
-    $('.num').html('Faculty' + '' + currentIndex + 'of' + totalItems + '');
-});
+    let title = carouselElement.attr('data-title');
+    let totalItems = carouselElement.find('.carousel-item').length;
+    let currentIndex = 1;
 
+    if (title) {
+        title = '<span class="mr-1">' + title + '</span>';
+    } else {
+        title = '';
+    }
 
-$('.num').html('Faculty' + '' + currentIndex + 'of' + totalItems + '');
+    carouselElement.on('slide.bs.carousel', function(e) {
+        currentIndex = $(e.relatedTarget).index() + 1;
+        console.log(currentIndex)
+        carouselElement.find('.carousel-page-indicator').html(title + currentIndex + ' of ' + totalItems);
+    });
 
-$('#carouselLeadControls').carousel({
-    interval: 2000
-});
-
-$('#carouselLeadControls').bind('slid', function() {
-    currentIndex = $('div.active').index() + 1;
-    $('.num').html('Faculty' + '' + currentIndex + 'of' + totalItems + '');
-});
-
-
-$('.num').html('Faculty' + '' + currentIndex + 'of' + totalItems + '');
-
-$('#carouselBapioControls').carousel({
-    interval: 2000
-});
-
-$('#carouselBapioControls').bind('slid', function() {
-    currentIndex = $('div.active').index() + 1;
-    $('.num').html('Faculty' + '' + currentIndex + 'of' + totalItems + '');
-});
+    carouselElement.find('.carousel-page-indicator').html(title + currentIndex + ' of ' + totalItems);
+}

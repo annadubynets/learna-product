@@ -711,17 +711,13 @@ footer ul {
 
 .carousel-control-prev-icon {
     background-image: url('../images/arrows-01.svg');
-    bottom: 0;
-    left: 236px;
 }
 
 .carousel-control-next-icon {
     background-image: url('../images/arrows-02.svg');
-    bottom: 0;
-    right: 324px;
 }
 
-.num {
+.carousel-page-indicator {
     font-weight: normal;
     font-size: 14px;
     color: $blue-color;
