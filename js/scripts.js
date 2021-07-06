@@ -28,7 +28,9 @@ function setupCarousel(selector) {
     let carouselElement = $(selector);
 
     // init carousel control
-    carouselElement.carousel({});
+    carouselElement.carousel({
+        interval: false,
+    });
 
     let title = carouselElement.attr('data-title');
     let totalItems = carouselElement.find('.carousel-item').length;
