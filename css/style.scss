@@ -25,6 +25,7 @@ h2 {
 h3 {
     font-size: 24px;
     span {
+        font-family: "Roboto", sans-serif;
         font-weight: bold;
         font-size: 14px;
         color: rgba(21, 58, 89, 0.6);
@@ -383,6 +384,7 @@ ul li::marker {
 .nav-pills {
     border-bottom: none;
     .nav-link {
+        font-family: "Roboto", sans-serif;
         font-weight: 500;
         border-radius: 0;
         background-color: #BEC6CF;
